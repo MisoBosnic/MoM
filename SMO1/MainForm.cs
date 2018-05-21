@@ -33,7 +33,7 @@ using System.Collections;
 
 namespace SMO1
 {
-    public partial class MainForm2 : Form
+    public partial class MainForm : Form
     {
         //-------------------------
         internal DataSet _TableMD;
@@ -55,7 +55,7 @@ namespace SMO1
         //-------------------------------------------
         private Server _srv;
 
-        public MainForm2()
+        public MainForm()
         {
             InitializeComponent();
             //
@@ -396,7 +396,7 @@ public class ColumnMetadata
 
 public class AllTreeView  
 {
-    internal void ShowMDforSelectedTable(SMO1.MainForm2 myForm)
+    internal void ShowMDforSelectedTable(SMO1.MainForm myForm)
     {
         int rowIndex = myForm._TablesView.Find(myForm._SelectedTableTableName);
         if (rowIndex == -1)
@@ -423,7 +423,7 @@ public class AllTreeView
     }
 
  
-    internal void ShowColumnsMDforSelectedTable(SMO1.MainForm2 myForm)
+    internal void ShowColumnsMDforSelectedTable(SMO1.MainForm myForm)
     {
         DataRowView[] columnsRows = myForm._ColumnsView.FindRows(new object[] { myForm._SelectedTableIdTable });
         myForm._SelectedTableColumns = columnsRows;
@@ -449,7 +449,7 @@ public class AllTreeView
     }
 
     // 
-    internal void RefreshColumnMD(SMO1.MainForm2 myForm, string mySelected)
+    internal void RefreshColumnMD(SMO1.MainForm myForm, string mySelected)
     {
         foreach (DataRowView myDRV in myForm._SelectedTableColumns)
         {
