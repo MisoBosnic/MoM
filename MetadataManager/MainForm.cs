@@ -72,25 +72,24 @@ namespace SMO1
             //_srv = default(Server);
             //_srv = new Server();
 
-            //Connect to SQL2017
+            // Connect to SQL2017
             _srv = new Server(@"miso-xps\mssqlserver01");
 
-            // Load the images in an ImageList.?????????????????????????
-            //
-            ImageList myImageList = new ImageList();
-            myImageList.Images.Add(Image.FromFile(@"C:\Users\Predrag\Documents\SQL-MD\SMO2\SMO2\SMO1\Icons\server.ico"));
-            myImageList.Images.Add(Image.FromFile(@"C:\Users\Predrag\Documents\SQL-MD\SMO2\SMO2\SMO1\Icons\database-black.png"));
-            myImageList.Images.Add(Image.FromFile(@"C:\Users\Predrag\Documents\SQL-MD\SMO2\SMO2\SMO1\Icons\table.png"));
-            myImageList.Images.Add(Image.FromFile(@"C:\Users\Predrag\Documents\SQL-MD\SMO2\SMO2\SMO1\Icons\column.ico"));
-            myImageList.Images.Add(Image.FromFile(@"C:\Users\Predrag\Documents\SQL-MD\SMO2\SMO2\SMO1\Icons\index.ico"));
-            myImageList.Images.Add(Image.FromFile(@"C:\Users\Predrag\Documents\SQL-MD\SMO2\SMO2\SMO1\Icons\depend.ico"));
-            myImageList.Images.Add(Image.FromFile(@"C:\Users\Predrag\Documents\SQL-MD\SMO2\SMO2\SMO1\Icons\blank.ico"));
-            myImageList.Images.Add(Image.FromFile(@"C:\Users\Predrag\Documents\SQL-MD\SMO2\SMO2\SMO1\Icons\table2.jpg"));
-            myImageList.Images.Add(Image.FromFile(@"C:\Users\Predrag\Documents\SQL-MD\SMO2\SMO2\SMO1\Icons\folder01.ico"));
-            myImageList.Images.Add(Image.FromFile(@"C:\Users\Predrag\Documents\SQL-MD\SMO2\SMO2\SMO1\Icons\folder.png"));
+            // Load the icons we need
+            var icons = new ImageList();
+            icons.Images.Add(Image.FromFile(@"Icons/server.ico"));
+            icons.Images.Add(Image.FromFile(@"Icons/database-black.png"));
+            icons.Images.Add(Image.FromFile(@"Icons/table.png"));
+            icons.Images.Add(Image.FromFile(@"Icons/column.ico"));
+            icons.Images.Add(Image.FromFile(@"Icons/index.ico"));
+            icons.Images.Add(Image.FromFile(@"Icons/depend.ico"));
+            icons.Images.Add(Image.FromFile(@"Icons/blank.ico"));
+            icons.Images.Add(Image.FromFile(@"Icons/table2.jpg"));
+            icons.Images.Add(Image.FromFile(@"Icons/folder01.ico"));
+            icons.Images.Add(Image.FromFile(@"Icons/folder.png"));
 
             // Assign the ImageList to the TreeView.
-            treeViewSQL.ImageList = myImageList;
+            treeViewSQL.ImageList = icons;
 
             // Add a main root tree node.              
             treeViewSQL.Nodes.Add(_srv.Name, _srv.Name, 0);
@@ -125,8 +124,8 @@ namespace SMO1
             }
             
             //
-            SqlConnection con = new SqlConnection(@"Data Source=MISO-XPS\MSSQLSERVER01;Initial Catalog=TestMD;Integrated Security=True");
-            SqlCommand cmd = new SqlCommand();
+            var con = new SqlConnection(@"Data Source=MISO-XPS\MSSQLSERVER01;Initial Catalog=TestMD;Integrated Security=True");
+            var cmd = new SqlCommand();
             cmd.Connection = con;
 
             // 
@@ -135,16 +134,16 @@ namespace SMO1
             try
             {
                 // Get ColumnMD for all records to dataset _ColumnMD
-                string cmdText1 = "SELECT  * from FieldMD order by idTableMD, FieldPosition";
-                SqlDataAdapter adapter1 = new SqlDataAdapter(cmdText1, con);
+                var cmdText1 = "SELECT  * from FieldMD order by idTableMD, FieldPosition";
+                var adapter1 = new SqlDataAdapter(cmdText1, con);
                 adapter1.Fill(_ColumnMD);
 
                 // all columns to view
                 _ColumnsView = new DataView(_ColumnMD.Tables[0], "", "idTableMD", DataViewRowState.CurrentRows);
  
                 // Get TableMD all records to dataset _TableMD
-                string cmdText = "SELECT  * from TableMD where TableType = 'data' order by TableName";
-                SqlDataAdapter adapter = new SqlDataAdapter(cmdText, con);             
+                var cmdText = "SELECT  * from TableMD where TableType = 'data' order by TableName";
+                var adapter = new SqlDataAdapter(cmdText, con);             
                 adapter.Fill(_TableMD);
 
                 // All tables to view
@@ -157,6 +156,7 @@ namespace SMO1
                         this.treeViewSQL.Nodes[0].Nodes["TestMD"].Nodes["Tables"].Nodes["Standard"].Nodes.Add(row.ItemArray[0].ToString(), row.ItemArray[1].ToString(), 2, 2);                      
                     }
                 }
+
                 this.treeViewSQL.ExpandAll();
                 con.Close();
             }

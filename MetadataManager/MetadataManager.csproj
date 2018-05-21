@@ -200,56 +200,156 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Icons\addprop.ico" />
-    <Content Include="Icons\allserv.ico" />
-    <Content Include="Icons\database-8-1.png" />
-    <Content Include="Icons\database-8.png" />
-    <Content Include="Icons\bigblob.ico" />
-    <Content Include="Icons\blank.ico" />
-    <Content Include="Icons\CHECKMRK.ICO" />
-    <Content Include="Icons\column.ico" />
-    <Content Include="Icons\Connect.ico" />
-    <Content Include="Icons\constran.ico" />
-    <Content Include="Icons\database-black.png" />
-    <Content Include="Icons\database.ico" />
-    <Content Include="Icons\defaults.ico" />
-    <Content Include="Icons\delprop.ico" />
-    <Content Include="Icons\depend.ico" />
-    <Content Include="Icons\diagram.ico" />
-    <Content Include="Icons\Disconnect.ico" />
-    <Content Include="Icons\editprop.ico" />
-    <Content Include="Icons\folder-8.png" />
-    <Content Include="Icons\folder.png" />
-    <Content Include="Icons\FOLDER01.ICO" />
-    <Content Include="Icons\FOLDER02.ICO" />
-    <Content Include="Icons\ftcat.ico" />
-    <Content Include="Icons\index.ico" />
-    <Content Include="Icons\params.ico" />
-    <Content Include="Icons\procedur.ico" />
-    <Content Include="Icons\reports.ico" />
-    <Content Include="Icons\roles.ico" />
-    <Content Include="Icons\rules.ico" />
-    <Content Include="Icons\save-16.png" />
-    <Content Include="Icons\save-8.png" />
-    <Content Include="Icons\selected.ico" />
-    <Content Include="Icons\server.ico" />
-    <Content Include="Icons\server1.ico" />
-    <Content Include="Icons\server2.ico" />
-    <Content Include="Icons\sgroup.ico" />
-    <Content Include="Icons\SQLServer.ico" />
-    <Content Include="Icons\SQLServer2.ico" />
-    <Content Include="Icons\sysdtype.ico" />
-    <Content Include="Icons\sysfunc.ico" />
-    <Content Include="Icons\table.ico" />
-    <Content Include="Icons\table.png" />
-    <Content Include="Icons\Table2.jpg" />
-    <Content Include="Icons\trigger.ico" />
-    <Content Include="Icons\udfunc.ico" />
-    <Content Include="Icons\udtype.ico" />
-    <Content Include="Icons\users.ico" />
-    <Content Include="Icons\view.ico" />
-    <Content Include="Icons\WRENCH.ICO" />
-    <Content Include="Icons\xml.ico" />
+    <Content Include="Icons\addprop.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\allserv.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\database-8-1.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\database-8.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\bigblob.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\blank.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\CHECKMRK.ICO">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\column.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\Connect.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\constran.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\database-black.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\database.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\defaults.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\delprop.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\depend.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\diagram.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\Disconnect.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\editprop.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\folder-8.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\folder.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\FOLDER01.ICO">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\FOLDER02.ICO">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\ftcat.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\index.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\params.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\procedur.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\reports.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\roles.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\rules.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\save-16.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\save-8.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\selected.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\server.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\server1.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\server2.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\sgroup.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\SQLServer.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\SQLServer2.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\sysdtype.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\sysfunc.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\table.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\table.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\Table2.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\trigger.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\udfunc.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\udtype.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\users.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\view.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\WRENCH.ICO">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icons\xml.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Scripts\jquery-2.1.1.intellisense.js" />
     <Content Include="Scripts\jquery-2.1.1.js" />
     <Content Include="Scripts\jquery-2.1.1.min.js" />
